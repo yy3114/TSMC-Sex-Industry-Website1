@@ -17,7 +17,6 @@
         .container {
             max-width: 1000px; /* Max width for content */
         }
-        /* Adjusted h1 size via Tailwind classes directly in HTML for better control */
         h2 {
             font-size: 2.5rem;
             font-weight: 600;
@@ -69,15 +68,37 @@
             line-height: 1.4;
             margin-bottom: 0.75rem;
         }
+        /* Styling for bold journal names */
+        .reference-list b {
+            font-weight: 600; /* Make bold slightly heavier */
+            color: #1f2937; /* Slightly darker color for emphasis */
+        }
+        .paper-meta {
+            margin-top: 2rem;
+            margin-bottom: 3rem;
+            font-size: 0.95rem;
+            color: #4a5568;
+        }
+        .paper-meta p {
+            margin-bottom: 0.5rem;
+        }
+        .paper-meta strong {
+            color: #2d3748;
+        }
     </style>
 </head>
 <body class="p-4 sm:p-6 lg:p-8">
     <div class="container mx-auto">
         <header class="text-center mb-8 sm:mb-12 lg:mb-16">
-            <!-- Adjusted font sizes for h1 using Tailwind classes, now even smaller -->
             <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-gray-900 leading-tight">
                 從台積電股價看性產業的榮枯<br class="hidden sm:inline">與社會情緒波動之蝴蝶效應
             </h1>
+            <!-- New section for journal and author metadata -->
+            <div class="paper-meta">
+                <p><strong>作者：</strong> 李夢蝶 (Li, Meng-Die), 陳華 (Chen, Hua), 馬曉 (Ma, Xiao)</p>
+                <p><strong>機構：</strong> 虛擬社會經濟研究中心 (Virtual Socio-Economic Research Center)</p>
+                <p><strong>發表於：</strong> **Journal of Human Behavior in Economic Systems**, Vol. 7, No. 4, pp. 301-320 (2022)</p>
+            </div>
         </header>
 
         <div class="section-card">
@@ -346,11 +367,11 @@
             <h2 class="text-3xl sm:text-4xl lg:text-5xl">參考文獻</h2>
             <ul class="reference-list">
                 <li>1. Akerlof, G. A., & Shiller, R. J. (2015). *Phishing for Phools: The Economics of Manipulation and Deception*. Princeton University Press.</li>
-                <li>2. Becker, G. S. (1968). Crime and Punishment: An Economic Approach. *Journal of Political Economy*, 76(2), 169-217.</li>
+                <li>2. Becker, G. S. (1968). Crime and Punishment: An Economic Approach. **Journal of Political Economy**, 76(2), 169-217.</li>
                 <li>3. Bourdieu, P. (1984). *Distinction: A Social Critique of the Judgement of Taste*. Harvard University Press.</li>
                 <li>4. Butler, J. (1990). *Gender Trouble: Feminism and the Subversion of Identity*. Routledge.</li>
                 <li>5. Chang, H. (2018). *The Digital Economy and Its Discontents: From Silicon Valley to the Global South*. Routledge.</li>
-                <li>6. Chen, L. (2020). *The Hidden Economy: Unveiling the Informal Sector in Asia*. East Asia Publishing. (虛構)</li>
+                <li>6. Chen, L. (2022). The Hidden Economy in Asia: Unveiling the Informal Sector. **Asian Economic Review**, 45(3), 211-235. (虛構)</li>
                 <li>7. Csikszentmihalyi, M. (1990). *Flow: The Psychology of Optimal Experience*. Harper & Row.</li>
                 <li>8. Davidson, M. (2017). *The Affective Turn in Economic Sociology*. Palgrave Macmillan.</li>
                 <li>9. Deleuze, G., & Guattari, F. (1972). *Anti-Oedipus: Capitalism and Schizophrenia*. University of Minnesota Press.</li>
@@ -360,14 +381,14 @@
                 <li>13. Fukuyama, F. (1992). *The End of History and the Last Man*. Free Press.</li>
                 <li>14. Giddens, A. (1991). *Modernity and Self-Identity: Self and Society in the Late Modern Age*. Stanford University Press.</li>
                 <li>15. Hsieh, Y. C. (2019). *Taiwan's Semiconductor Miracle: Geopolitics, Innovation, and Global Supply Chains*. National Taiwan University Press.</li>
-                <li>16. Kahneman, D., & Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. *Econometrica*, 47(2), 263-291.</li>
+                <li>16. Kahneman, D., & Tversky, A. (1979). Prospect Theory: An Analysis of Decision under Risk. **Econometrica**, 47(2), 263-291.</li>
                 <li>17. Keynes, J. M. (1936). *The General Theory of Employment, Interest, and Money*. Macmillan.</li>
-                <li>18. Lee, J. S. (2021). *The Psychology of Speculative Bubbles: From Tulip Mania to Tech Stocks*. Behavioral Finance Institute. (虛構)</li>
-                <li>19. Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. *Journal of the Atmospheric Sciences*, 20(2), 130-141.</li>
+                <li>18. Lee, J. S. (2022). The Psychology of Speculative Bubbles: A Behavioral Finance Perspective. **Journal of Financial Psychology**, 18(1), 55-78. (虛構)</li>
+                <li>19. Lorenz, E. N. (1963). Deterministic Nonperiodic Flow. **Journal of the Atmospheric Sciences**, 20(2), 130-141.</li>
                 <li>20. Luhmann, N. (1995). *Social Systems*. Stanford University Press.</li>
-                <li>21. Ma, X. (2022). *Digital Platforms and the Commodification of Desire: A Global Perspective*. Cybernetics & Society Journal. (虛構)</li>
+                <li>21. Ma, X. (2022). Digital Platforms and the Commodification of Desire: A Global Perspective. **Cybernetics & Society Journal**, 10(2), 112-130. (虛構)</li>
                 <li>22. Marcuse, H. (1964). *One-Dimensional Man: Studies in the Ideology of Advanced Industrial Society*. Beacon Press.</li>
-                <li>23. Merton, R. K. (1968). The Matthew Effect in Science. *Science*, 159(3810), 56-63.</li>
+                <li>23. Merton, R. K. (1968). The Matthew Effect in Science. **Science**, 159(3810), 56-63.</li>
                 <li>24. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System.</li>
                 <li>25. Peng, S. L. (2018). *The Social Impact of High-Tech Industries on Urban Development in Taiwan*. Taiwan Studies Quarterly.</li>
                 <li>26. Pinker, S. (1997). *How the Mind Works*. W. W. Norton & Company.</li>
@@ -376,49 +397,49 @@
                 <li>29. Sassen, S. (2001). *The Global City: New York, London, Tokyo*. Princeton University Press.</li>
                 <li>30. Shiller, R. J. (2000). *Irrational Exuberance*. Princeton University Press.</li>
                 <li>31. Smith, A. (1776). *An Inquiry into the Nature and Causes of the Wealth of Nations*. W. Strahan and T. Cadell.</li>
-                <li>32. Tao, M. (2023). *Emotional Contagion in Digital Spaces: A New Economic Factor*. Journal of Digital Sociology. (虛構)</li>
+                <li>32. Tao, M. (2022). Emotional Contagion in Digital Spaces: A New Economic Factor. **Journal of Human Behavior in Economic Systems**, 7(4), 301-320. (虛構)</li>
                 <li>33. Veblen, T. (1899). *The Theory of the Leisure Class: An Economic Study of Institutions*. Macmillan.</li>
                 <li>34. Weber, M. (1905). *The Protestant Ethic and the Spirit of Capitalism*. Charles Scribner's Sons.</li>
-                <li>35. White, H. C. (1981). Where Do Markets Come From? *American Journal of Sociology*, 87(3), 517-547.</li>
-                <li>36. Wong, K. L. (2020). *The Unseen Hand: Informal Economies and Social Resilience in East Asia*. Asian Economic Review. (虛構)</li>
+                <li>35. White, H. C. (1981). Where Do Markets Come From? **American Journal of Sociology**, 87(3), 517-547.</li>
+                <li>36. Wong, K. L. (2022). The Unseen Hand: Informal Economies and Social Resilience in East Asia. **Asian Economic Review**, 46(1), 45-68. (虛構)</li>
                 <li>37. Yang, S. F. (2019). *The Psychology of Consumer Debt and Discretionary Spending*. Behavioral Economics Journal.</li>
-                <li>38. Zhang, L. (2022). *The Global Flow of Adult Content: A Political Economy Perspective*. International Journal of Media Studies. (虛構)</li>
-                <li>39. Zhou, P. (2021). *The Paradox of Prosperity: When Economic Growth Fuels Alternative Consumption*. Social Psychology of Consumption. (虛構)</li>
+                <li>38. Zhang, L. (2022). The Global Flow of Adult Content: A Political Economy Perspective. **International Journal of Media Studies**, 15(2), 89-105. (虛構)</li>
+                <li>39. Zhou, P. (2022). The Paradox of Prosperity: When Economic Growth Fuels Alternative Consumption. **Social Psychology of Consumption**, 9(3), 170-195. (虛構)</li>
                 <li>40. Zizek, S. (2008). *The Sublime Object of Ideology*. Verso.</li>
-                <li>41. Aoi, S. (2010). *My Life as a Digital Icon: A Memoir*. Tokyo: Fictional Press. (虛構)</li>
-                <li>42. Chen, H. (2024). *The Neuroscience of Desire and Economic Decision-Making*. Journal of Neuroeconomics. (虛構)</li>
-                <li>43. Fujiwara, K. (2023). *The Hidden Market: An Ethnography of Japan's Adult Video Industry*. Kyoto University Press. (虛構)</li>
-                <li>44. Hashimoto, A. (2021). *Beyond the Screen: Reflections on Performance and Identity*. Osaka: Imaginary Books. (虛構)</li>
-                <li>45. Kim, S. J. (2020). *The K-Pop Phenomenon and its Unintended Economic Spillovers*. Global Culture Studies. (虛構)</li>
-                <li>46. Lee, M. D. (2025). *The Butterfly Effect in Financial Markets: A Chaotic System Analysis*. International Journal of Financial Engineering. (虛構)</li>
-                <li>47. Mikami, Y. (2022). *The Art of Transformation: From Idol to Entrepreneur*. Tokyo: Dream Weaver Publishing. (虛構)</li>
-                <li>48. Nakamura, T. (2023). *The Sociology of Online Fandom and Parasocial Relationships*. Journal of Digital Culture. (虛構)</li>
-                <li>49. Park, J. H. (2024). *The Dark Side of Prosperity: Mental Health Challenges in High-Tech Hubs*. Asian Journal of Public Health. (虛構)</li>
-                <li>50. Sato, Y. (2021). *The Economic Impact of Digital Entertainment on Youth Culture*. Media Economics Review. (虛構)</li>
-                <li>51. Tanaka, R. (2022). *The Global Supply Chain of Desire: From Production to Consumption*. Critical Studies in Media. (虛構)</li>
-                <li>52. Wang, C. (2023). *The Psychology of Compulsive Consumption in Modern Society*. Behavioral Psychology Quarterly. (虛構)</li>
-                <li>53. Yamashita, H. (2024). *The Unspoken Costs: Social Pressure and Individual Choices in Neoliberal Economies*. Journal of Critical Social Theory. (虛構)</li>
-                <li>54. Yoshida, S. (2025). *The Future of Work and Leisure in a Post-Industrial Society*. Futures Studies. (虛構)</li>
-                <li>55. Zheng, L. (2023). *The Digitalization of Intimacy: A Global Perspective*. Cyberpsychology Journal. (虛構)</li>
-                <li>56. Adams, J. (2024). *The Algorithmic Construction of Desire*. AI Ethics Review. (虛構)</li>
-                <li>57. Brown, K. (2023). *The Economics of Escapism: From Gambling to Virtual Worlds*. Leisure Studies Quarterly. (虛構)</li>
-                <li>58. Davies, P. (2022). *Complexity Theory and Social Dynamics*. Systems Thinking Journal. (虛構)</li>
-                <li>59. Evans, L. (2024). *The Globalized Body: Sex, Labor, and Migration*. Feminist Studies. (虛構)</li>
-                <li>60. Green, M. (2023). *Neuroeconomics of Pleasure and Reward Systems*. Brain & Behavior Journal. (虛構)</li>
-                <li>61. Hall, S. (2021). *Cultural Identity and Media Consumption*. Cultural Studies Review. (虛構)</li>
-                <li>62. Ito, N. (2022). *The Dark Web Economy: Unregulated Markets and Social Impact*. Cybercrime Journal. (虛構)</li>
-                <li>63. Jones, P. (2024). *The Sociology of Solitude in the Digital Age*. Journal of Contemporary Sociology. (虛構)</li>
-                <li>64. Kim, Y. (2023). *The Commodification of Authenticity in Performance Industries*. Performance Studies International. (虛構)</li>
-                <li>65. Lee, D. (2022). *The Psychological Impact of Economic Uncertainty*. Journal of Stress and Coping. (虛構)</li>
-                <li>66. Miller, S. (2024). *The Political Economy of Morality*. Ethical Theory and Moral Practice. (虛構)</li>
-                <li>67. Nguyen, T. (2023). *The Role of Social Media in Shaping Consumer Desires*. Marketing & Society. (虛構)</li>
-                <li>68. Oh, S. (2022). *The Global Flow of Capital and its Unintended Social Consequences*. World Economy Journal. (虛構)</li>
-                <li>69. Quinn, R. (2024). *The Philosophy of Pleasure and Pain in Modernity*. Philosophical Quarterly. (虛構)</li>
-                <li>70. Smith, J. (2023). *The Impact of Technological Advancement on Human Relationships*. Technology & Society. (虛構)</li>
-                <li>71. Taylor, A. (2022). *The Economics of Addiction and Habit Formation*. Journal of Economic Psychology. (虛構)</li>
-                <li>72. Wu, L. (2024). *The Urban Landscape of Desire: Mapping Informal Economies*. Urban Studies Journal. (虛構)</li>
-                <li>73. Xu, H. (2023). *The Interplay of Culture and Economy in East Asian Societies*. Asian Cultural Studies. (虛構)</li>
-                <li>74. Young, K. (2022). *The Psychology of Online Behavior and Identity*. Cyberpsychology, Behavior, and Social Networking. (虛構)</li>
+                <li>41. Aoi, S. (2022). My Life as a Digital Icon: A Memoir. **Journal of Digital Culture and Society**, 5(2), 10-25. (虛構)</li>
+                <li>42. Chen, H. (2022). The Neuroscience of Desire and Economic Decision-Making. **Journal of Neuroeconomics**, 12(4), 310-335. (虛構)</li>
+                <li>43. Fujiwara, K. (2022). The Hidden Market: An Ethnography of Japan's Adult Video Industry. **Journal of Asian Cultural Studies**, 8(1), 70-90. (虛構)</li>
+                <li>44. Hashimoto, A. (2022). Beyond the Screen: Reflections on Performance and Identity. **Global Media & Performance Review**, 3(2), 45-60. (虛構)</li>
+                <li>45. Kim, S. J. (2022). The K-Pop Phenomenon and its Unintended Economic Spillovers. **Journal of Global Cultural Economics**, 6(3), 140-165. (虛構)</li>
+                <li>46. Lee, M. D. (2022). The Butterfly Effect in Financial Markets: A Chaotic System Analysis. **International Journal of Financial Engineering**, 11(1), 1-25. (虛構)</li>
+                <li>47. Mikami, Y. (2022). The Art of Transformation: From Idol to Entrepreneur. **Journal of Creative Industries and Business**, 4(4), 201-220. (虛構)</li>
+                <li>48. Nakamura, T. (2022). The Sociology of Online Fandom and Parasocial Relationships. **Journal of Digital Culture**, 7(1), 1-18. (虛構)</li>
+                <li>49. Park, J. H. (2022). The Dark Side of Prosperity: Mental Health Challenges in High-Tech Hubs. **Asian Journal of Public Health**, 14(2), 88-105. (虛構)</li>
+                <li>50. Sato, Y. (2022). The Economic Impact of Digital Entertainment on Youth Culture. **Media Economics Review**, 9(3), 120-145. (虛構)</li>
+                <li>51. Tanaka, R. (2022). The Global Supply Chain of Desire: From Production to Consumption. **Critical Studies in Media**, 16(1), 30-50. (虛構)</li>
+                <li>52. Wang, C. (2022). The Psychology of Compulsive Consumption in Modern Society. **Behavioral Psychology Quarterly**, 13(2), 75-98. (虛構)</li>
+                <li>53. Yamashita, H. (2022). The Unspoken Costs: Social Pressure and Individual Choices in Neoliberal Economies. **Journal of Critical Social Theory**, 5(1), 1-20. (虛構)</li>
+                <li>54. Yoshida, S. (2022). The Future of Work and Leisure in a Post-Industrial Society. **Futures Studies**, 28(4), 340-365. (虛構)</li>
+                <li>55. Zheng, L. (2022). The Digitalization of Intimacy: A Global Perspective. **Cyberpsychology Journal**, 17(3), 210-230. (虛構)</li>
+                <li>56. Adams, J. (2022). The Algorithmic Construction of Desire. **AI Ethics Review**, 2(1), 10-25. (虛構)</li>
+                <li>57. Brown, K. (2022). The Economics of Escapism: From Gambling to Virtual Worlds. **Leisure Studies Quarterly**, 25(4), 300-320. (虛構)</li>
+                <li>58. Davies, P. (2022). Complexity Theory and Social Dynamics. **Systems Thinking Journal**, 8(2), 88-105. (虛構)</li>
+                <li>59. Evans, L. (2022). The Globalized Body: Sex, Labor, and Migration. **Feminist Studies**, 48(3), 450-475. (虛構)</li>
+                <li>60. Green, M. (2022). Neuroeconomics of Pleasure and Reward Systems. **Brain & Behavior Journal**, 10(1), 1-15. (虛構)</li>
+                <li>61. Hall, S. (2021). *Cultural Identity and Media Consumption*. Cultural Studies Review.</li>
+                <li>62. Ito, N. (2022). The Dark Web Economy: Unregulated Markets and Social Impact. **Cybercrime Journal**, 6(2), 110-130. (虛構)</li>
+                <li>63. Jones, P. (2024). *The Sociology of Solitude in the Digital Age*. Journal of Contemporary Sociology.</li>
+                <li>64. Kim, Y. (2023). *The Commodification of Authenticity in Performance Industries*. Performance Studies International.</li>
+                <li>65. Lee, D. (2022). The Psychological Impact of Economic Uncertainty. **Journal of Stress and Coping**, 15(1), 20-40. (虛構)</li>
+                <li>66. Miller, S. (2024). *The Political Economy of Morality*. Ethical Theory and Moral Practice.</li>
+                <li>67. Nguyen, T. (2023). *The Role of Social Media in Shaping Consumer Desires*. Marketing & Society.</li>
+                <li>68. Oh, S. (2022). The Global Flow of Capital and its Unintended Social Consequences. **World Economy Journal**, 30(5), 600-625. (虛構)</li>
+                <li>69. Quinn, R. (2024). *The Philosophy of Pleasure and Pain in Modernity*. Philosophical Quarterly.</li>
+                <li>70. Smith, J. (2023). *The Impact of Technological Advancement on Human Relationships*. Technology & Society.</li>
+                <li>71. Taylor, A. (2022). The Economics of Addiction and Habit Formation. **Journal of Economic Psychology**, 43(3), 250-270. (虛構)</li>
+                <li>72. Wu, L. (2024). *The Urban Landscape of Desire: Mapping Informal Economies*. Urban Studies Journal.</li>
+                <li>73. Xu, H. (2023). *The Interplay of Culture and Economy in East Asian Societies*. Asian Cultural Studies.</li>
+                <li>74. Young, K. (2022). The Psychology of Online Behavior and Identity. **Cyberpsychology, Behavior, and Social Networking**, 25(6), 350-370. (虛構)</li>
             </ul>
         </div>
 
